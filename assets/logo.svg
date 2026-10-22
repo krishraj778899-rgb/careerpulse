@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient for Icon -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="shadowFilter" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#2563EB" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Mark Icon -->
+  <g transform="translate(15, 10)">
+    <!-- Rounded Squircle Base -->
+    <rect x="0" y="0" width="100" height="100" rx="26" fill="url(#primaryGradient)" filter="url(#shadowFilter)" />
+
+    <!-- Subtle Inner Border Highlight -->
+    <rect x="2" y="2" width="96" height="96" rx="24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.3" />
+
+    <!-- Briefcase / Platform Base Baseplate -->
+    <rect x="26" y="44" width="48" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.18" />
+
+    <!-- Modern Dynamic Pulse & Ascent Arrow Path -->
+    <path d="M 22 62 L 34 62 L 42 36 L 50 72 L 58 50 L 66 62 L 78 62" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Floating Target Star / Graduation Sparkle -->
+    <circle cx="78" cy="30" r="5.5" fill="#38BDF8" />
+    <path d="M 78 20 L 78 40 M 68 30 L 88 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Typography: CareerPulse -->
+  <g transform="translate(135, 72)">
+    <!-- "Career" -->
+    <text font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+          font-size="52" 
+          font-weight="800" 
+          fill="currentColor" 
+          letter-spacing="-1.5">Career<tspan fill="url(#textGradient)" font-weight="900">Pulse</tspan></text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="3" y="24" 
+          font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+          font-size="13" 
+          font-weight="600" 
+          letter-spacing="3.2" 
+          fill="#64748B" 
+          text-transform="uppercase">JOB &amp; INTERNSHIP ACCELERATOR</text>
+  </g>
+</svg>
